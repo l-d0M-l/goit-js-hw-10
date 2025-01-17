@@ -1,0 +1,42 @@
+.back-list {
+  list-style-type: none;
+  display: flex;
+
+  gap: 20px;
+  padding-left: 0;
+}
+.back-li {
+  background-color: teal;
+  border-radius: 3px;
+
+  padding: 5px;
+}
+a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.form-delay {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.form-delay input {
+  width: 370px;
+  font-size: 30px;
+  margin-top: 10px;
+}
+.legend {
+  font-size: 30px;
+}
+.fieldset {
+  width: 350px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.fieldset label {
+  font-size: 20px;
+}
+.sumbit-btn {
+  font-size: 20px;
+}
