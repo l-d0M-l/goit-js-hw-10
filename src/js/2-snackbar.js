@@ -5,7 +5,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 const delayField = document.querySelector('.delay-input');
 let delayValue;
-const btn = document.querySelector('.sumbit-btn');
+const form = document.querySelector('.form');
 
 function makePromise(delay, shouldResolve) {
   return new Promise((resolve, reject) => {
@@ -19,7 +19,7 @@ function makePromise(delay, shouldResolve) {
   });
 }
 
-btn.addEventListener('click', createPromise);
+form.addEventListener('submit', createPromise);
 
 function createPromise(event) {
   event.preventDefault();
@@ -30,7 +30,6 @@ function createPromise(event) {
     delayValue = 0;
   }
 
-  console.log(selectedRadio.value);
   makePromise(delayValue, selectedRadio.value)
     .then(value => {
       iziToast.show({
